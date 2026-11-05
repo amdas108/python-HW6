@@ -7,7 +7,26 @@ The script was tested on the following system:
 - **OS:** macOS 26.0 (Apple Silicon)
 - **Python:** 3.14.10
 
-## 1. Create and activate a virtual environment
+## 1. Install Python 3.14
+
+Install Python 3.14 using Homebrew:
+
+```bash
+brew update
+brew install python@3.14
+```
+
+Check the installed version:
+
+```bash
+python3.14 --version
+
+```
+
+The expected version is Python 3.14.10 or later within the 3.14 series.
+
+
+## 2. Create and activate a virtual environment
 
 Clone the repository and navigate to the project directory:
 
@@ -19,7 +38,7 @@ cd python-HW6
 Create and activate a virtual environment:
 
 ```bash
-python -m venv venv
+python3.14 -m venv venv
 source venv/bin/activate
 ```
 
@@ -29,7 +48,7 @@ Upgrade pip:
 python -m pip install --upgrade pip
 ```
 
-## 2. Install dependencies
+## 3. Install dependencies
 
 Install all required packages:
 
@@ -37,7 +56,7 @@ Install all required packages:
 python -m pip install -r requirements.txt
 ```
 
-## 3. Restore the legacy Biopython API
+## 4. Restore the legacy Biopython API
 
 The script imports `Bio.SubsMat.MatrixInfo`, which is no longer available in Biopython 1.88.
 
@@ -67,7 +86,7 @@ PY
 
 This compatibility module restores the old `MatrixInfo.blosum62` interface using the actual BLOSUM62 substitution matrix.
 
-## 4. Patch pandas compatibility
+## 5. Patch pandas compatibility
 
 The script passes a `set` as the DataFrame index. Pandas 2.2.3 explicitly rejects sets as index values.
 
@@ -99,7 +118,7 @@ PY
 
 The patch converts the set into a sorted list before constructing the DataFrame.
 
-## 5. Run the script
+## 6. Run the script
 
 After completing the steps above, run:
 
