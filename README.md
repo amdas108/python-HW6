@@ -1,6 +1,6 @@
 # HW6 — Virtual Environments
 
-## Environment
+## Part 1
 
 The script was tested on the following system:
 
@@ -131,3 +131,8 @@ If everything works correctly, you should see the following message:
 ```bash
 ✨❤ Всё работает, ты больш(ой/ая) молодец!!! ✨❤
 ```
+
+## Part 2. Extra points
+
+During the week, I met up with my friends, and we had a great time messing around in the kitchen of the Studing campus. The next day, we celebrated Halloween and performed with a choir at a festive concert. The day after that, we hosted a cooking masterclass for orphans. On top of all that, I went to a Tatar dance masterclass, worked out at the gym twice, ate well, and watched final of 1st season of Avatar Seven Heavens cartoon
+![proofs](photo.png)
